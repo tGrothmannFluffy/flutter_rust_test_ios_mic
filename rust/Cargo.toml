@@ -7,4 +7,7 @@ edition = "2021"
 crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
+cpal = "0.15.2"
 flutter_rust_bridge = "=2.0.0-dev.24"
+lazy_static = "1.4.0"
+queues = "1.1.0"
