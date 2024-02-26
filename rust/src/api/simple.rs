@@ -1,8 +1,8 @@
-use crate::audio_test::debug_log::{debug_log_string, dequeue_log_message};
+use crate::audio_test::{cpal_test::print_cpal_info_impl, debug_log::dequeue_log_message};
 
 #[flutter_rust_bridge::frb(sync)]
 pub fn greet(name: String) -> String {
-    debug_log_string(name.clone());
+    print_cpal_info_impl();
     format!("Hello, {name}!")
 }
 
